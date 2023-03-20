@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="Enter first number"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter second number"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Here will be result"
+        android:textColor="@color/gray"
+        android:textSize="30sp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/et2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et2"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:layout_constraintVertical_bias="0.522"></TextView>
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:text="plus +"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:layout_constraintVertical_bias="0.333"></Button>
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:text="minus -"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:layout_constraintVertical_bias="0.333"></Button>
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:text="multiple *"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/bt1"
+        app:layout_constraintStart_toStartOf="@+id/bt1"
+        app:layout_constraintTop_toBottomOf="@+id/bt1"></Button>
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:text="divide /"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/bt2"
+        app:layout_constraintStart_toStartOf="@+id/bt2"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"></Button>
+</android.support.constraint.ConstraintLayout>
